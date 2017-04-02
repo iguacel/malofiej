@@ -1,0 +1,532 @@
+/*GENERAL*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900');
+body {
+    overflow-x: hidden;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+h6 {
+    margin-bottom: 0;
+    margin-top: 0.9em;
+}
+
+.boton {
+    margin: 0 auto;
+    text-align: center;
+    color: #fd5247;
+    border-color: #fd5247;
+}
+
+.muestraTodo {
+    text-align: center;
+    display: none;
+}
+
+
+/*TYPE*/
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #3d3633;
+}
+
+a:hover {
+    opacity: 0.8;
+    color: #3d3633;
+}
+
+h1 {
+    font-size: 3.9em;
+    font-weight: 700;
+    padding-top: 1em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.subhead {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 2.5em;
+    font-weight: 400;
+    margin-top: -0.5em;
+}
+
+.filtrar {
+    padding-bottom: 5em;
+}
+
+h2 {
+    font-size: 1.9em;
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1.5em;
+}
+
+section:after {
+    content: "";
+    display: block;
+    border-top: 1px solid #e0ded7;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 1em;
+}
+
+.exp {
+    margin-top: -2em;
+    padding-bottom: 4em;
+}
+
+.sub {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 100;
+    margin-bottom: 0.2em;
+    color: #595757;
+}
+
+.media {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-top: 0.1em;
+    max-width: 85%;
+}
+
+.country {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+    padding-left: 0.8em;
+}
+
+.category {
+    color: #595757;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.reference {
+    font-weight: 300;
+    border: 1px solid #e0ded7;
+    border-radius: 2px;
+    margin-right: 5px;
+    color: #595757;
+    padding-left: 2px;
+}
+
+.users {
+    font-weight: 300;
+}
+
+
+/*BOLOS*/
+
+.gold .media {}
+
+.gold .media::before,
+.silver .media::before,
+.bronze .media::before {
+    content: "●";
+    font-size: 1.4em;
+    padding-right: 0.2em;
+    color: gold;
+}
+
+.silver .media::before {
+    content: "●";
+    font-size: 1.4em;
+    padding-right: 0.2em;
+    color: silver;
+}
+
+.bronze .media::before {
+    content: "●";
+    font-size: 1.4em;
+    padding-right: 0.2em;
+    color: #B87333;
+}
+
+
+/*FLEX*/
+
+.grid {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.element-item {
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    padding: 0.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 400px;
+}
+
+
+/*SECCIONES*/
+
+.breakingNews {}
+
+
+/*CAJAS*/
+
+.thumbnail {
+    height: 200px;
+    background-color: #e0ded7;
+    background-image: url("https://static01.nyt.com/newsgraphics/2016/06/22/olympians/assets/covers/biles-desktop-1280.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/*FILTROS*/
+
+.gold,
+.silver,
+.bronze,
+.special {
+    height: 450px;
+    background-color: white;
+}
+
+
+/*FILTROS FLEX*/
+
+.clave {
+    margin: 0;
+    font-weight: 100;
+    font-size: 0.8em;
+    line-height: 1.3em;
+}
+
+.tit {
+    width: 100px !important;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1em;
+    padding-top: 0.6em;
+    color: #fd5247;
+}
+
+.containerFilter {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.left {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    flex: 1;
+}
+
+.main {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.right {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+
+.col {
+    margin: 2px;
+    height: auto;
+    padding-bottom: 1em;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+footer p {
+    font-weight: 100;
+    margin-bottom: 0.3em;
+}
+
+footer a {
+    font-weight: 700;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.03em;
+}
+.contact {
+    color: #fd5247;
+}
+
+/*ROTAR BOTON?*/
+
+svg {
+    transition: all 0.5s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.rotar {
+    -webkit-animation: rota 0.5s ease-out;
+    /* Safari 4+ */
+    -moz-animation: rota .5s ease-out;
+    /* Fx 5+ */
+    -o-animation: rota .5s ease-out;
+    /* Opera 12+ */
+    animation: rota .5s ease-out;
+    /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes rota {
+    0% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    0% {
+        -webkit-transform: rotate3d(45, 45, 0, 180deg);
+                transform: rotate3d(45, 45, 0, 180deg);
+    }
+}
+
+@keyframes rota {
+    0% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    0% {
+        -webkit-transform: rotate3d(45, 45, 0, 180deg);
+                transform: rotate3d(45, 45, 0, 180deg);
+    }
+}
+
+
+/*MENU SOCIAL*/
+
+.shareFlecha {
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.shareTxt {
+    display: none;
+}
+
+
+/* Wrapper */
+
+.icon-button {
+    background-color: white;
+    border-radius: 3.9rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.8rem;
+    height: 3.9rem;
+    line-height: 3.9rem;
+    margin: 0 10px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 3.6rem;
+}
+
+
+/* Circle */
+
+.icon-button span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 0;
+}
+
+.icon-button:hover span {
+    width: 3.9rem;
+    height: 3.9rem;
+    border-radius: 3.9rem;
+    margin: -1.95rem;
+}
+
+.twitter span {
+    background-color: #4099ff;
+}
+
+.facebook span {
+    background-color: #3B5998;
+}
+
+.google-plus span {
+    background-color: #db5a3c;
+}
+
+
+/* Icons */
+
+.icon-button i {
+    background: none;
+    color: white;
+    height: 3.9rem;
+    left: 0;
+    line-height: 3.9rem;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 3.9rem;
+    z-index: 10;
+}
+
+.icon-button .icon-twitter {
+    color: #4099ff;
+}
+
+.icon-button .icon-facebook {
+    color: #3B5998;
+}
+
+.icon-button .icon-google-plus {
+    color: #db5a3c;
+}
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus {
+    color: white;
+}
+
+.botonSocial {
+    text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+/*Small devices*/
+
+@media (min-width: 576px) {
+    .element-item {
+        width: calc(100% / 2);
+    }
+}
+
+@media (min-width: 768px) {
+    .containerFilter {
+        -webkit-flex-flow: row;
+            -ms-flex-flow: row;
+                flex-flow: row;
+    }
+    section:after {
+        margin-left: 45%;
+        margin-right: 45%;
+    }
+    .shareTxt {
+        display: block;
+    }
+}
+
+
+/*Medium devices*/
+
+@media (min-width: 1000px) {
+    .element-item {
+        width: calc(100% / 3);
+    }
+}
+
+
+/*Large devices*/
+
+@media (min-width: 1200px) {
+    .element-item {
+        width: calc(100% / 4);
+    }
+}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+
+/*
+@media (min-width: 1600px) {
+    .element-item {
+        width: calc(100% / 5);
+    }
+}*/
