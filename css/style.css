@@ -1,6 +1,7 @@
 /*GENERAL*/
 
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
 body {
     overflow-x: hidden;
     padding: 20px;
@@ -52,7 +53,8 @@ h1 {
     margin-bottom: 2.5em;
     font-weight: 400;
     margin-top: -0.5em;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
+    font-weight: 400;
     
 }
 
