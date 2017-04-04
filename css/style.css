@@ -87,7 +87,7 @@ section:after {
 .sub {
     text-align: center;
     font-size: 1em;
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 0.2em;
     color: #595757;
 }
@@ -311,7 +311,7 @@ footer {
 }
 
 footer p {
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 0.3em;
 }
 
