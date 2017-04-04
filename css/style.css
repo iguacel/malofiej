@@ -56,7 +56,8 @@ h1 {
     font-weight: 400 important!;
     margin-top: -0.5em;
     letter-spacing: 0.04em;
-    font-weight: 300;  
+    font-weight: 300;
+    line-height: 1.5em;
 }
 
 .filtrar {
