@@ -1,6 +1,7 @@
 /*GENERAL*/
 
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
 body {
     overflow-x: hidden;
     padding: 20px;
@@ -39,19 +40,24 @@ a:hover {
 }
 
 h1 {
-    font-size: 3.9em;
+    font-size: 3.4em;
     font-weight: 700;
-    padding-top: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     text-align: center;
     margin-bottom: 0;
+    line-height: 1em;
 }
 
 .subhead {
-    font-size: 2.2em;
+    font-size: 1.2em;
     text-align: center;
     margin-bottom: 2.5em;
-    font-weight: 400;
+    font-weight: 400 important!;
     margin-top: -0.5em;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+    line-height: 1.5em;
 }
 
 .filtrar {
@@ -82,7 +88,7 @@ section:after {
 .sub {
     text-align: center;
     font-size: 1em;
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 0.2em;
     color: #595757;
 }
@@ -221,7 +227,7 @@ section:after {
 
 .clave {
     margin: 0;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 0.8em;
     line-height: 1.3em;
 }
@@ -306,7 +312,7 @@ footer {
 }
 
 footer p {
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 0.3em;
 }
 
