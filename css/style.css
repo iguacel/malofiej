@@ -8,6 +8,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.header {
+    padding-top: 2em;
+}
+
 h6 {
     margin-bottom: 0;
     margin-top: 0.9em;
